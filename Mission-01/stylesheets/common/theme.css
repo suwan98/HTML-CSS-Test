@@ -1,1 +1,10 @@
 /* Theme 스타일 작성 */
+:root {
+    --border-color : #c4c4c4;
+    --text-color : #c4c4c4;
+    --blue-color : #0096e4;
+    --red-color : #e52330;
+    --olive-color : #c7cd1d;
+    --black-color : #181818;  
+    --white-color : #ffffff;   
+}

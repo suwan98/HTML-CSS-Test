@@ -1,9 +1,12 @@
 /* CSS 작성 */
 
-
 section{
     display: flex;
-    
+    align-items: center;
+}
+.title{
+    display: flex;
+    color: var(--black-color);
 }
 
 .today-discovery-title::after{
@@ -13,50 +16,98 @@ section{
     height: 15px;
     font-size: bold;
     margin: 0 8px; 
-    background-color: #c4c4c4;
+    background-color: var(--border-color);
     transform : translateY(1px);
 
 }
 
-.today-discovery-subtitle{
-    color: #c4c4c4;
+.title .today-discovery-subtitle{
+    color: var(--border-color);
     font-size: medium;
-    display: flex;
-    align-items: center; 
 }
 
 .discovery-list{
     width: 1010px;
     height: 1020px;
-    display: flex;
-    flex-direction: column;
-}
-.title{ 
-    display: flex;
-    padding: 0 25px;
-    top: -25px;
+    display: grid;
+    grid-template-areas: 
+    "item-header item-header item-header item-header"
+    "item-body item-body item-body item-body"
+    "item-footer item-footer item-footer item-footer";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em 1em;
 }
 
-
+/* 아이템 헤더 영역 */ 
 .item-header{
-    border: 1px solid black;
+    grid-area: item-header;
     display: flex;
+    flex: 1;
+    justify-content: space-around;
     align-items: center;
+}
+.item-header .item-tea{
+    border: 1px solid  var(--border-color);
+}
+.item-header .item-vaseline{
+    border: 1px solid  var(--border-color);
+
+}
+
+/* 아이템 바디 영역 */
+.item-body{
+    grid-area: item-body;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.item-body .item-cream{
+    border: 1px solid  var(--border-color);
+
+}
+.item-body .item-bibs{
+    border: 1px solid  var(--border-color);
+
+}
+.item-body .item-hanssem{
+    border: 1px solid  var(--border-color);
+
+}
+.item-body .item-dumpling{
+    border: 1px solid  var(--border-color);
+
+}
+
+/* 아이템 푸터 영역 */
+.item-footer{
+    grid-area: item-footer;
+    display: flex;
+    flex: 1;
     justify-content: space-around;
 }
-.item-tea{
-    display: flex;
-    position: relative;
+
+.item-footer .item-tissue{
+    border: 1px solid  var(--border-color);
+    
+    
 }
+.item-footer .item-febreze{
+    border: 1px solid  var(--border-color);
+}
+.item-footer .item-dyson{
+    border: 1px solid  var(--border-color);
+}
+
+
 .ico-go{
-    display: block;
-    position: absolute;
-    bottom: 100px;
+    float: left;
     width: 42px;
     height: 42px;
     background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
-    float: left;
-
 }
 
+
+   
