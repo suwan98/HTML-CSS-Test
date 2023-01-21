@@ -41,9 +41,9 @@ section{
 
 /* 아이템 헤더 영역 */ 
 .item-header{
+    position: relative;
     grid-area: item-header;
     display: flex;
-    flex: 1;
     justify-content: space-around;
     align-items: center;
 }
@@ -57,9 +57,9 @@ section{
 
 /* 아이템 바디 영역 */
 .item-body{
+    position: relative;
     grid-area: item-body;
     display: flex;
-    flex: 1;
     justify-content: space-around;
     align-items: center;
 
@@ -83,9 +83,9 @@ section{
 
 /* 아이템 푸터 영역 */
 .item-footer{
+    position: relative;
     grid-area: item-footer;
     display: flex;
-    flex: 1;
     justify-content: space-around;
 }
 
@@ -101,13 +101,65 @@ section{
     border: 1px solid  var(--border-color);
 }
 
-
 .ico-go{
+    position: absolute;
     float: left;
     width: 42px;
     height: 42px;
     background-color: rgba(0, 0, 0, 0.2);
+    bottom: 10%;
 }
+
+    /* .item-body .ico-go{
+    position: absolute;
+    float: left;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 10%;
+}
+
+
+.item-footer .ico-go{
+    position: absolute;
+    float: left;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 10%;
+} */
+
+.item-vaseline:hover{
+    border: 1px solid var(--blue-color);
+}
+.item-tea:hover{
+    border: 1px solid var(--blue-color);
+}
+.item-cream:hover{
+    border: 1px solid var(--blue-color);
+}
+.item-bibs:hover{
+    border: 1px solid var(--blue-color);
+}
+.item-hanssem:hover{
+    border: 1px solid var(--blue-color);
+}
+.item-dumpling:hover{
+    border: 1px solid var(--blue-color);
+}
+.item-tissue:hover{
+    border: 1px solid var(--blue-color);
+}
+.item-febreze:hover{
+    border: 1px solid var(--blue-color);
+}
+.item-dyson:hover{
+    border: 1px solid var(--blue-color);
+}
+
+
+
+
 
 
    
